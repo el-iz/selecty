@@ -11,11 +11,17 @@
         }
     ],
     "require": {
+        "php": ">=5.3.0",
         "yiisoft/yii2": "*"
     },
     "autoload": {
         "psr-4": {
             "elizzk\\selecty\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
         }
     }
 }
