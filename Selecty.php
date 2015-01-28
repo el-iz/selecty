@@ -3,7 +3,7 @@
  * @Author: eliz
  * @Date:   2015-01-28 10:52:59
  * @Last Modified by:   eliz
- * @Last Modified time: 2015-01-28 15:39:26
+ * @Last Modified time: 2015-01-28 15:49:05
  */
 
 namespace eliz\selecty;
@@ -20,6 +20,7 @@ class Selecty extends InputWidget
 
 	public $options = [];
 	public $data = null;
+	public $relation = null;
 	private $_hidden = false;
 
 	/**
@@ -37,10 +38,10 @@ class Selecty extends InputWidget
 	public function run()
 	{
         $relations = $this->model->{$this->attribute};
-		if ($this->data === null )
+		if ($this->data === null || $this->relation === null )
             throw new InvalidConfigException("'data' is required.");
         if ($relations)
-			$values = ArrayHelper::map($relations, $relations[0]->primaryKey,$relations[0]->primaryKey);
+			$values = ArrayHelper::map($relations, $this->relation,$this->relation);
 		else
 			$values = [];
 		$input = '<div class="selecty" id="'.$this->options["id"].'">';
