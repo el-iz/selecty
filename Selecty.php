@@ -3,13 +3,13 @@
  * @Author: eliz
  * @Date:   2015-01-28 10:52:59
  * @Last Modified by:   eliz
- * @Last Modified time: 2015-01-28 12:04:24
+ * @Last Modified time: 2015-01-28 15:39:26
  */
 
 namespace eliz\selecty;
 
 use yii\helpers\Html;
-use yii\helpers\Json;
+use yii\helpers\ArrayHelper;
 use yii\widgets\InputWidget;
 use yii\base\InvalidConfigException;
 
