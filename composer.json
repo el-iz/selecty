@@ -1,0 +1,21 @@
+{
+    "name": "elizzk/selecty",
+    "description": "Selecty widget for Yii2.",
+    "keywords": ["yii", "extension", "widget", "selecty"],
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Eliz KILIC",
+            "email": "elizkilic@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "elizzk\\selecty\\": ""
+        }
+    }
+}
