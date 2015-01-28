@@ -43,7 +43,7 @@ class Selecty extends InputWidget
 			$values = ArrayHelper::map($relations, $relations[0]->primaryKey,$relations[0]->primaryKey);
 		else
 			$values = [];
-		$input = '<div class="selecty" id="expertiselist">';
+		$input = '<div class="selecty" id="'.$this->options["id"].'">';
 	    foreach ($this->data as $key => $value) {
 		    $selected = in_array($key, $values) ? "checked" : "";
 		    $input .= "<label><input name='{$this->attribute}[]' value='$key' $selected type='checkbox'><span>$value</span></label>";
